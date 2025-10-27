@@ -1,9 +1,11 @@
 on:
   schedule:
-   - cron: "0 0 * * *"
+    - cron: "0 0 * * *"
+
 jobs:
-  delaiy-task:
+  delay-task:
     runs-on: ubuntu-latest
-      steps:
-        - name: print massege
-          run: echo"run scheduled task"
+    steps:
+      - name: Print message
+        run: echo "Run scheduled task"
+
